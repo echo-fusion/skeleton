@@ -1,0 +1,38 @@
+{
+    "name": "echo-fustion/skeleton",
+    "description": "structure of echoFusion php framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amir",
+            "email": "a.shadanfar.IT@gmail.com"
+        }
+    ],
+    "keywords": [
+        "Php",
+        "mvc",
+        "framework"
+    ],
+    "autoload": {
+        "psr-4": {
+            "EchoFustion\\": "/",
+            "App\\": "/app/",
+            "Modules\\": "/modules/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "dev-master",
+        "vimeo/psalm": "5.x-dev"
+    }
+}
