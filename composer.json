@@ -1,12 +1,17 @@
 {
-    "name": "echo-fustion/echo-fustion",
+    "name": "echo-fution/echo-fusion",
     "description": "structure of echoFusion php framework",
     "type": "project",
     "license": "MIT",
-    "keywords": ["echoFustion", "skeleton","framework"],
+    "keywords": [
+        "EchoFusion",
+        "skeleton",
+        "framework",
+        "PHP"
+    ],
     "support": {
-        "issues": "https://github.com/echo-fusion/skeleton/issues",
-        "source": "https://github.com/echo-fusion/skeleton"
+        "issues": "https://github.com/echo-fusion/echo-fusion/issues",
+        "source": "https://github.com/echo-fusion/echo-fusion/"
     },
     "authors": [
         {
@@ -16,19 +21,14 @@
     ],
     "require": {
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-        "echo-fusion/framework": "dev-master"
+        "echo-fusion/framework": "0.x-dev"
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "echo-fusion/framework",
-                "version": "dev-master",
-                "source": {
-                    "url": "../framework",
-                    "type": "git",
-                    "reference": "master"
-                }
+            "type": "path",
+            "url": "../framework",
+            "options": {
+                "symlink": true
             }
         }
     ],
@@ -40,7 +40,6 @@
     },
     "autoload": {
         "psr-4": {
-            "EchoFusion\\": "/",
             "App\\": "/app/",
             "Modules\\": "/modules/"
         }
